@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory;
 
 
 class Television implements electricalDevice {

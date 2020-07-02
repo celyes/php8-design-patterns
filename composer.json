@@ -1,6 +1,6 @@
 {
     "name": "celyes/design-patterns",
-    "require-dev": {
+    "require": {
         "phpunit/phpunit": "^9"
     },
     "authors": [
@@ -8,5 +8,10 @@
             "name": "celyes",
             "email": "celyes02@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
 }

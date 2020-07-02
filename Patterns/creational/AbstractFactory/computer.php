@@ -1,11 +1,12 @@
 <?php
 
-namespace DesignPatterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory;
 
 
 class Computer implements electricalDevice {
 
     private $price;
+    private $type;
 
     public function __construct($price) 
     {
@@ -21,6 +22,4 @@ class Computer implements electricalDevice {
     {
         return '1366x768';
     }
-
-
 }

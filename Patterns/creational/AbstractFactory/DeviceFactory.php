@@ -1,9 +1,9 @@
 <?php
 
-namespace DesignPatterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory;
 
 
-class DeviceAbstractFactory implements electricalDevice {
+class DeviceFactory {
 
     private $price;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace DesignPatterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory;
 
 
 interface electricalDevice {
@@ -8,6 +8,5 @@ interface electricalDevice {
     public function calculatePrice();
 
     public function getResolution(); 
-
 
 }
