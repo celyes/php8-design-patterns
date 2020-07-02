@@ -1,0 +1,12 @@
+{
+    "name": "celyes/design-patterns",
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    },
+    "authors": [
+        {
+            "name": "celyes",
+            "email": "celyes02@gmail.com"
+        }
+    ]
+}
