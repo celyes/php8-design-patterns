@@ -8,11 +8,18 @@ use Patterns\Creational\Factory\Manufacturers\Toyota;
 
 class FactoryTest extends TestCase {
     
+    private $factory;
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->factory = new carFactory();
+    }
+
     public function testCanMakeCar() 
     {
-        
         $factory = new carFactory();
-        $this->assertInstanceOf(Toyota::class, $factory->makeToyota());
+        $this->assertInstanceOf(Toyota::class, $this->factory->makeToyota());
         
     }
 }

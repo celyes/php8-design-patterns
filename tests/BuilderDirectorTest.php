@@ -8,10 +8,15 @@ use Patterns\Creational\Builder\PersonBuilder;
 use Patterns\Creational\Builder\Models\Person;
 
 class BuilderDirectorTest extends TestCase {
+    private $personBuilder;
+    public function setUp(): void
+    {
+        parent::setUp();
+        $this->personBuilder = new PersonBuilder();
+    }
     public function testCanBuildPerson() 
     {
-        $personBuilder = new PersonBuilder();
-        $newPerson = (new Director())->create($personBuilder);
+        $newPerson = (new Director())->create($this->personBuilder);
         $this->assertInstanceOf(Person::class, $newPerson);
     }
 }

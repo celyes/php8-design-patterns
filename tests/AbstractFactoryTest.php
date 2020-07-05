@@ -10,9 +10,14 @@ class AbstractFactoryTests extends TestCase {
 
     private $deviceFactory;
 
-    public function testCanCreateComputer() 
+    protected function setUp(): void
     {
+        parent::setUp();
         $this->deviceFactory = new DeviceFactory(10000);
+    }
+    
+    public function testCanCreateComputer(): void
+    {
         $computer = $this->deviceFactory->createComputer();
         $this->assertInstanceOf(Computer::class, $computer);
     }
