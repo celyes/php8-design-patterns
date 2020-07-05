@@ -8,7 +8,7 @@ use Patterns\Creational\Singleton\Singleton;
 final class SingletonTest extends TestCase {
     
 
-    public function testTwoObjectsAreTheExactSame() 
+    public function testTwoInstancesAreTheExactSame() 
     {
         $first = Singleton::getInstance();
         $second = Singleton::getInstance();

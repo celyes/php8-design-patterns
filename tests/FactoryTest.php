@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Patterns\Creational\Factory\carFactory;
 use Patterns\Creational\Factory\Manufacturers\Toyota;
 
-class FactoryTest extends TestCase {
+final class FactoryTest extends TestCase {
     
     private $factory;
 

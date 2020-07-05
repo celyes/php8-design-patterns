@@ -7,7 +7,7 @@ use Patterns\Creational\Builder\Director;
 use Patterns\Creational\Builder\PersonBuilder;
 use Patterns\Creational\Builder\Models\Person;
 
-class BuilderDirectorTest extends TestCase {
+final class BuilderDirectorTest extends TestCase {
     private $personBuilder;
     public function setUp(): void
     {
