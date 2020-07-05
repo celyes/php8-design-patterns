@@ -1,11 +1,11 @@
-<?php 
+<?php declare ( strict_types = 1 ) ;
 
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use Patterns\Creational\Singleton\Singleton;
 
-class SingletonTest extends TestCase {
+final class SingletonTest extends TestCase {
     
 
     public function testTwoObjectsAreTheExactSame() 

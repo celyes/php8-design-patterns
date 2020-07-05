@@ -1,4 +1,4 @@
-<?php 
+<?php declare ( strict_types = 1 ) ;
 
 namespace Tests;
 
@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use Patterns\Creational\AbstractFactory\DeviceFactory;
 use Patterns\Creational\AbstractFactory\Computer;
 
-class AbstractFactoryTests extends TestCase {
+final class AbstractFactoryTests extends TestCase {
 
     private $deviceFactory;
 
