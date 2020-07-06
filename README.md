@@ -8,4 +8,4 @@ any additions, improvements or modifications are welcome.
 
 ### Issues
 
-Any isses? [open here](https://github.com/celyes/design-patterns-php/issues) 
+[See here](https://github.com/celyes/design-patterns-php/issues) 
