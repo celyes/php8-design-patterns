@@ -11,18 +11,15 @@ final class PrototypeTest extends TestCase {
     public function testIfObjectsAreCloning() 
     {
         $carPrototype = new CarPrototype();
-        $truckPrototype = new TruckPrototype();
+        $car = clone $carPrototype;
+        $car->setModel('Mercedes A45');
+        $this->assertInstanceOf(CarPrototype::class, $car);
 
-        for($i = 0; $i < 10; $i++) {
-            $car = clone $carPrototype;
-            $car->setModel('Mercedes A45');
-            $this->assertInstanceOf(CarPrototype::class, $car);
-        }
-        for($i = 0; $i < 10; $i++) {
-            $truck = clone $truckPrototype;
-            $truck->setModel('Volvo 750');
-            $this->assertInstanceOf(TruckPrototype::class, $truck);
-        }
+        $truckPrototype = new TruckPrototype();
+        $truck = clone $truckPrototype;
+        $truck->setModel('Volvo 750');
+        $this->assertInstanceOf(TruckPrototype::class, $truck);
+        
         
     }
 
