@@ -8,7 +8,7 @@ use Patterns\Creational\Prototype\TruckPrototype;
 
 final class PrototypeTest extends TestCase {
 
-    public function testIfObjectsAreClones() 
+    public function testIfObjectsAreCloning() 
     {
         $carPrototype = new CarPrototype();
         $truckPrototype = new TruckPrototype();

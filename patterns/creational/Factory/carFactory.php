@@ -9,7 +9,8 @@ use Exception;
 
 class carFactory {
 
-    public function makeToyota() {
+    public function makeToyota(): Toyota 
+    {
         return new Toyota();
         
     }   

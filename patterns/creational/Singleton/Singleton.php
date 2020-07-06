@@ -17,7 +17,7 @@ class Singleton {
         throw new Exception("Cannot unserialize singleton");
     }
 
-    public static function getInstance() 
+    public static function getInstance(): Singleton 
     {
 
         $subclass = static::class;
