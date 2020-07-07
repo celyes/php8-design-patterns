@@ -12,12 +12,10 @@ final class PrototypeTest extends TestCase {
     {
         $carPrototype = new CarPrototype();
         $car = clone $carPrototype;
-        $car->setModel('Mercedes A45');
         $this->assertInstanceOf(CarPrototype::class, $car);
 
         $truckPrototype = new TruckPrototype();
         $truck = clone $truckPrototype;
-        $truck->setModel('Volvo 750');
         $this->assertInstanceOf(TruckPrototype::class, $truck);
         
         
