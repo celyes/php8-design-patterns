@@ -3,7 +3,7 @@
 namespace Patterns\Creational\AbstractFactory;
 
 
-interface electricalDevice {
+interface Device {
 
     public function calculatePrice();
 

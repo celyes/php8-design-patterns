@@ -3,7 +3,7 @@
 namespace Patterns\Creational\AbstractFactory;
 
 
-class Computer implements electricalDevice {
+class Computer implements Device {
 
     private $price;
     private $type;

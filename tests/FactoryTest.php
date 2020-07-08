@@ -3,7 +3,7 @@
 namespace Tests;
 
 use PHPUnit\Framework\TestCase;
-use Patterns\Creational\Factory\carFactory;
+use Patterns\Creational\Factory\CarFactory;
 use Patterns\Creational\Factory\Manufacturers\Toyota;
 
 final class FactoryTest extends TestCase {
@@ -13,7 +13,7 @@ final class FactoryTest extends TestCase {
     protected function setUp(): void
     {
         parent::setUp();
-        $this->factory = new carFactory();
+        $this->factory = new CarFactory();
     }
 
     public function testCanMakeCar() 

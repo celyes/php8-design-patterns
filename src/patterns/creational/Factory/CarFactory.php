@@ -7,7 +7,7 @@ use Patterns\Creational\Factory\Manufacturers\Toyota;
 
 use Exception;
 
-class carFactory {
+class CarFactory {
 
     public function makeToyota(): Toyota 
     {
