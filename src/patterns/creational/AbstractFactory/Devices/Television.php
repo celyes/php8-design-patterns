@@ -1,9 +1,12 @@
 <?php
 
-namespace Patterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory\Devices;
+
+use  Patterns\Creational\AbstractFactory\Device;
 
 
-class Television implements electricalDevice {
+class Television implements Device 
+{
 
     private $price;
 

@@ -2,8 +2,11 @@
 
 namespace Patterns\Creational\AbstractFactory;
 
+use Patterns\Creational\AbstractFactory\Devices\Computer;
+use Patterns\Creational\AbstractFactory\Devices\Television;
 
-class DeviceFactory {
+class DeviceFactory 
+{
 
     private $price;
 

@@ -2,9 +2,10 @@
 
 namespace Patterns\Creational\Factory\Manufacturers;
 
-class Mercedes extends Car {
+class ToyotaVehicle extends Vehicle 
+{
     public function __construct() 
     {
-        echo "The best or nothing!";
+        echo "We build the most reliable cars ever!";
     }
 }

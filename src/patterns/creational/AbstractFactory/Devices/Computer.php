@@ -1,9 +1,11 @@
 <?php
 
-namespace Patterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory\Devices;
 
+use  Patterns\Creational\AbstractFactory\Device;
 
-class Computer implements Device {
+class Computer implements Device 
+{
 
     private $price;
     private $type;

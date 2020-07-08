@@ -2,7 +2,8 @@
 
 namespace Patterns\Creational\Builder\Models;
 
-class Creature {
+class Creature 
+{
 
     private array $data = [];
 

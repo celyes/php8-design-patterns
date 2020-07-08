@@ -2,6 +2,7 @@
 
 namespace Patterns\Creational\Factory\Manufacturers;
 
-class Car {
+class Vehicle 
+{
     
 }

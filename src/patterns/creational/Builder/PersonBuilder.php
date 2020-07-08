@@ -4,7 +4,8 @@ namespace Patterns\Creational\Builder;
 
 use Patterns\Creational\Builder\Models\Person;
 
-class PersonBuilder implements PersonInterface {
+class PersonBuilder implements PersonInterface 
+{
 
     private Person $person;
 

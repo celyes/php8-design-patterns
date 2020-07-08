@@ -4,7 +4,7 @@ namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use Patterns\Creational\AbstractFactory\DeviceFactory;
-use Patterns\Creational\AbstractFactory\Computer;
+use Patterns\Creational\AbstractFactory\Devices\Computer;
 
 final class AbstractFactoryTests extends TestCase {
 

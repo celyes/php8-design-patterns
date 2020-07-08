@@ -2,6 +2,7 @@
 
 namespace Patterns\Creational\Builder\Models;
 
-class Person extends Creature {
+class Person extends Creature 
+{
     
 }
