@@ -4,7 +4,7 @@ namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 use Patterns\Creational\Factory\VehicleFactory;
-use Patterns\Creational\Factory\Manufacturers\ToyotaVehicle;
+use Patterns\Creational\Factory\Manufacturers\Toyota;
 
 final class FactoryTest extends TestCase 
 {
@@ -20,7 +20,7 @@ final class FactoryTest extends TestCase
     public function testCanMakeCar() 
     {
         $factory = new VehicleFactory();
-        $this->assertInstanceOf(ToyotaVehicle::class, $this->factory->makeToyota());
+        $this->assertInstanceOf(Toyota::class, $this->factory->makeToyota());
         
     }
 }

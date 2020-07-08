@@ -1,6 +1,6 @@
 <?php
 
-namespace Patterns\Creational\AbstractFactory;
+namespace Patterns\Creational\AbstractFactory\Devices;
 
 
 interface Device 

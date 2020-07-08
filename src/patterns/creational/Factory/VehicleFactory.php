@@ -2,20 +2,20 @@
 
 namespace Patterns\Creational\Factory;
 
-use Patterns\Creational\Factory\Manufacturers\MercedesVehicle;
-use Patterns\Creational\Factory\Manufacturers\ToyotaVehicle;
+use Patterns\Creational\Factory\Manufacturers\Mercedes;
+use Patterns\Creational\Factory\Manufacturers\Toyota;
 
 
 class VehicleFactory {
 
-    public function makeMercedes(): MercedesVehicle 
+    public function makeMercedes(): Mercedes 
     {
-        return new MercedesVehicle();
+        return new Mercedes();
         
     }   
-    public function makeToyota(): ToyotaVehicle 
+    public function makeToyota(): Toyota 
     {
-        return new ToyotaVehicle();
+        return new Toyota();
         
     }   
    

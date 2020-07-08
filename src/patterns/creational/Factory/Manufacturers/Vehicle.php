@@ -2,7 +2,7 @@
 
 namespace Patterns\Creational\Factory\Manufacturers;
 
-class Vehicle 
+interface Vehicle 
 {
     
 }

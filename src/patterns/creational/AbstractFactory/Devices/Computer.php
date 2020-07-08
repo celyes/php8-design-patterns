@@ -2,8 +2,6 @@
 
 namespace Patterns\Creational\AbstractFactory\Devices;
 
-use  Patterns\Creational\AbstractFactory\Device;
-
 class Computer implements Device 
 {
 
