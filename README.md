@@ -4,13 +4,19 @@ The most well-known design patterns written in PHP.
 
 ### Install & configuration
 
-- Fork the repo, or download it.
-- change directory to the downloaded folder.
-- install dependencies:
+install process is done using Composer:
+
+```bash
+composer require celyes/design-patterns
+```
+
+install dependencies:
 
 ```bash
 composer install
 ```
+
+You can also fork this repo and clone it.
 
 ### Contribution
 
