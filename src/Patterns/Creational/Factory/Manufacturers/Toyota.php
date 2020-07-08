@@ -2,7 +2,7 @@
 
 namespace Patterns\Creational\Factory\Manufacturers;
 
-class Toyota implements Vehicle 
+class Toyota implements Vehicle
 {
     public function __construct() 
     {

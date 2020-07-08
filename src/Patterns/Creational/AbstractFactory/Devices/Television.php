@@ -3,7 +3,7 @@
 namespace Patterns\Creational\AbstractFactory\Devices;
 
 
-class Television implements Device 
+class Television implements Device
 {
 
     private $price;

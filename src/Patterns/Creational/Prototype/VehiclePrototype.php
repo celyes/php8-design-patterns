@@ -2,7 +2,7 @@
 
 namespace Patterns\Creational\Prototype;
 
-abstract class VehiclePrototype 
+abstract class VehiclePrototype
 {
 
     private $model; 
