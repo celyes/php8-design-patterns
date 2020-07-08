@@ -6,9 +6,9 @@ use Patterns\Creational\Builder\Models\Person;
 
 
 interface PersonInterface {
-    public function createPerson(): void;
-    public function addName(string $name): void;
-    public function addAge(int $age): void;
-    public function addHobby(string $hobby): void;
+    public function createPerson();
+    public function addName(string $name);
+    public function addAge(int $age);
+    public function addHobby(string $hobby);
     public function getPerson(): Person;
 }

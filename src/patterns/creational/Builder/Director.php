@@ -7,9 +7,7 @@ class Director {
 
     public function create(PersonInterface $builder): Object
     {
-        $builder->createPerson();
-        $builder->addName("Ilyes");
-        $builder->addAge(25);
-        return $builder->getPerson();
+        $person = $builder->createPerson()->addName("Ilyes")->addAge(25);
+        return $person->getPerson();
     }
 }

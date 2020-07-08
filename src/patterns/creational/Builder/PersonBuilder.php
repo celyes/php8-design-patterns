@@ -8,24 +8,28 @@ class PersonBuilder implements PersonInterface {
 
     private Person $person;
 
-    public function createPerson(): void
+    public function createPerson(): self
     { 
         $this->person = new Person();  
+        return $this;
     }
 
-    public function addName(string $name): void
+    public function addName(string $name): self
     { 
         $this->person->setProperty('NAME', $name);
+        return $this;
     }
 
-    public function addAge(int $age): void 
+    public function addAge(int $age): self 
     { 
         $this->person->setProperty('AGE', 30);
+        return $this;
     }
 
-    public function addHobby(string $hobby): void
+    public function addHobby(string $hobby): self
     { 
         $this->person->setProperty('HOBBY', $hobby);
+        return $this;
     }
 
     public function getPerson(): Person 
