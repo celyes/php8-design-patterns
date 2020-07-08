@@ -8,7 +8,7 @@ The most well-known design patterns written in PHP.
 - change directory to the downloaded folder.
 - install dependencies:
 
-```php
+```bash
 composer install
 ```
 
@@ -18,7 +18,7 @@ any additions, improvements or modifications are welcome.
 
 ### Running test
 
-```php
+```bash
 vendor/bin/phpunit
 ```
 
