@@ -2,9 +2,25 @@
 
 The most well-known design patterns written in PHP.
 
+### Install & configuration
+
+- Fork the repo, or download it.
+- change directory to the downloaded folder.
+- install dependencies:
+
+```php
+composer install
+```
+
 ### Contribution
 
 any additions, improvements or modifications are welcome.
+
+### Running test
+
+```php
+vendor/bin/phpunit
+```
 
 ### Issues
 
