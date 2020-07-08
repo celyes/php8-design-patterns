@@ -10,8 +10,8 @@
         }
     ],
     "autoload": {
-        "classmap": [
-            "./"
-        ]
+        "psr-4": {
+            "Patterns\\": "src/Patterns/"
+        }
     }
 }
