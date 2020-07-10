@@ -10,7 +10,7 @@ class DeviceFactory
 
     private $price;
 
-    public function __construct($price) 
+    public function __construct($price)
     {
         $this->price = $price;
     }
@@ -24,6 +24,4 @@ class DeviceFactory
     {
         return new Computer($this->price);
     }
-
-
 }

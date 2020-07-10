@@ -1,15 +1,15 @@
-<?php 
+<?php
 
 namespace Patterns\Creational\Prototype;
 
 abstract class VehiclePrototype
 {
 
-    private $model; 
+    private $model;
 
     abstract public function __clone();
 
-    public function setModel(string $model): void 
+    public function setModel(string $model): void
     {
         $this->model = $model;
     }

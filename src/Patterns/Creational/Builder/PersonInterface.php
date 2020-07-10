@@ -1,9 +1,8 @@
-<?php 
+<?php
 
 namespace Patterns\Creational\Builder;
 
 use Patterns\Creational\Builder\Models\Person;
-
 
 interface PersonInterface
 {

@@ -2,13 +2,11 @@
 
 namespace Patterns\Creational\AbstractFactory\Devices;
 
-
 class Television implements Device
 {
-
     private $price;
 
-    public function __construct($price) 
+    public function __construct($price)
     {
         $this->price = $price;
     }
@@ -18,10 +16,8 @@ class Television implements Device
         return $this->price  + 120;
     }
 
-    public function getResolution() 
+    public function getResolution()
     {
         return '1920x1080';
     }
-
-
 }

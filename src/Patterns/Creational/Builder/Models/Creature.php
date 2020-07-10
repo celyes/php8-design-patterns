@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Patterns\Creational\Builder\Models;
 
@@ -11,5 +11,4 @@ class Creature
     {
         $this->data[$key] = $value;
     }
-
 }

@@ -4,11 +4,10 @@ namespace Patterns\Creational\AbstractFactory\Devices;
 
 class Computer implements Device
 {
-
     private $price;
     private $type;
 
-    public function __construct($price) 
+    public function __construct($price)
     {
         $this->price = $price;
     }
@@ -18,7 +17,7 @@ class Computer implements Device
         return $this->price  + 300;
     }
 
-    public function getResolution() 
+    public function getResolution()
     {
         return '1366x768';
     }

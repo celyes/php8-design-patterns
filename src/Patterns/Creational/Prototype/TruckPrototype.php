@@ -4,9 +4,7 @@ namespace Patterns\Creational\Prototype;
 
 class TruckPrototype extends VehiclePrototype
 {
-
-    public function __clone() 
+    public function __clone()
     {
-        
     }
 }

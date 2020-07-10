@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Patterns\Creational\Singleton;
 
@@ -9,14 +9,12 @@ class Singleton
 
     private static $instance = null;
 
-    protected function __construct() 
+    protected function __construct()
     {
-
     }
     
-    protected function __clone() 
-    { 
-
+    protected function __clone()
+    {
     }
     
     protected function __wakeup()
@@ -24,9 +22,8 @@ class Singleton
         throw new Exception("Cannot unserialize singleton");
     }
 
-    public static function getInstance(): self 
+    public static function getInstance(): self
     {
-
         $subclass = static::class;
 
         if (static::$instance === null) {
