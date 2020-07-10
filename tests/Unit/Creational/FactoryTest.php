@@ -1,6 +1,6 @@
 <?php declare ( strict_types = 1 ) ;
 
-namespace Tests;
+namespace Tests\Unit\Creational;
 
 use PHPUnit\Framework\TestCase;
 use Patterns\Creational\Factory\VehicleFactory;

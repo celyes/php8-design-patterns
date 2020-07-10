@@ -6,6 +6,6 @@ class Mercedes implements Vehicle
 {
     public function __construct()
     {
-        echo "The best or nothing!";
+        return "The best or nothing!";
     }
 }
