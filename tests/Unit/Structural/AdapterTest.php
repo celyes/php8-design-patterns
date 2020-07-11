@@ -12,8 +12,7 @@ final class AdapterTest extends TestCase
 
     public function testIfAdapterIsWorking() 
     {
-        $braintree = new PayWithBraintree();
-        $adapter = new StripeToBraintree($braintree);
+        $adapter = new StripeToBraintree(new PayWithBraintree());
         $adapter->addElement(2500);
         $adapter->addElement(3000);
         $adapter->addElement(1500);
