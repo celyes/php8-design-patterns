@@ -7,11 +7,11 @@ use Patterns\Structural\Composite\PlayerInterface;
 class Track implements PlayerInterface 
 {
 
-    protected $artist;
-    protected $title;
-    protected $path;
+    protected string $artist;
+    protected string $title;
+    protected string $path;
 
-    public function __construct($artist, $title, $path)
+    public function __construct(string $artist, string $title, string $path)
     {
         $this->artist = $artist;
         $this->title = $title;
