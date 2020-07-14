@@ -13,14 +13,14 @@ class Playlist implements PlayerInterface
         $this->songs[] = $song;
         return true;
     }
-    public function play() 
+    public function play()
     {
         return $this->songs[$this->current]->play();
     }
 
     public function next()
     {
-        if(isset($this->songs[$this->current + 1])){
+        if (isset($this->songs[$this->current + 1])) {
             $this->current += 1;
             return $this->play();
         }
@@ -28,7 +28,7 @@ class Playlist implements PlayerInterface
     }
     public function previous()
     {
-        if($this->current > 0){
+        if ($this->current > 0) {
             $this->current -= 1;
             return $this->play();
         }

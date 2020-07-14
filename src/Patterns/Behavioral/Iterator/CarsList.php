@@ -2,13 +2,13 @@
 
 namespace Patterns\Behavioral\Iterator;
 
-use Countable, Iterator;
+use Countable;
+use Iterator;
 
 class CarsList implements Countable, Iterator
 {
-
     private array $cars = [];
-    private int $index = 0; 
+    private int $index = 0;
 
     public function add(Car $car)
     {
@@ -18,9 +18,9 @@ class CarsList implements Countable, Iterator
     public function removeCar(Car $carToRemove)
     {
         foreach ($this->cars as $key => $car) {
-           if($car->getFullModel() === $carToRemove->getFullModel()){
-               unset($this->cars[$key]);
-           }
+            if ($car->getFullModel() === $carToRemove->getFullModel()) {
+                unset($this->cars[$key]);
+            }
         }
         $this->cars = array_values($this->cars);
     }

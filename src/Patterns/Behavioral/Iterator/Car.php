@@ -2,7 +2,7 @@
 
 namespace Patterns\Behavioral\Iterator;
 
-class Car 
+class Car
 {
     private $manufacturer;
     private $model;

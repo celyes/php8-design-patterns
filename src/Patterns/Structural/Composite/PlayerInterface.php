@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Patterns\Structural\Composite;
 
-interface PlayerInterface 
+interface PlayerInterface
 {
     public function play();
 }

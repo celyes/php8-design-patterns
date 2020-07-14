@@ -4,7 +4,7 @@ namespace Patterns\Structural\Composite\Components;
 
 use Patterns\Structural\Composite\PlayerInterface;
 
-class Track implements PlayerInterface 
+class Track implements PlayerInterface
 {
 
     protected string $artist;
