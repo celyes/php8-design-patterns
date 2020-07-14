@@ -3,22 +3,38 @@
 namespace Tests\Unit\Creational;
 
 use PHPUnit\Framework\TestCase;
-use Patterns\Creational\AbstractFactory\DeviceFactory;
-use Patterns\Creational\AbstractFactory\Devices\Computer;
+use Patterns\Creational\AbstractFactory\MercedesFactory;
+use Patterns\Creational\AbstractFactory\Models\MercedesModel;
+use Patterns\Creational\AbstractFactory\BMWFactory;
+use Patterns\Creational\AbstractFactory\Models\BMWModel;
 
 final class AbstractFactoryTests extends TestCase {
 
-    private $deviceFactory;
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->deviceFactory = new DeviceFactory(10000);
-    }
     
-    public function testCanCreateComputer()
+    public function testCanCreateMercedesModel()
     {
-        $computer = $this->deviceFactory->createComputer();
-        $this->assertInstanceOf(Computer::class, $computer);
+        $mercedes = new MercedesFactory();
+        $model = $mercedes->makeModel();
+        $this->assertInstanceOf(MercedesModel::class, $model);
+    }
+
+    public function testCanCreateBMWModel()
+    {
+        $mercedes = new BMWFactory();
+        $model = $mercedes->makeModel();
+        $this->assertInstanceOf(BMWModel::class, $model);
+    }
+
+    public function testCanGetMercedesModelDescription()
+    {
+        $mercedes = new MercedesFactory();
+        $model = $mercedes->makeModel();
+        $this->assertEquals('A45S AMG', $model->getDescription());
+    }
+    public function testCanGetBMWModelDescription()
+    {
+        $bmw = new BMWFactory();
+        $model = $bmw->makeModel();
+        $this->assertEquals('M5 Competition', $model->getDescription());
     }
 }
