@@ -4,25 +4,27 @@ namespace Patterns\Creational\Singleton;
 
 use Exception;
 
-class Singleton
+final class Singleton
 {
 
     private static $instance = null;
 
-    protected function __construct()
+    private function __construct()
     {
+        // hide the contructor
     }
     
-    protected function __clone()
+    private function __clone()
     {
+        // disable cloning 
     }
     
-    protected function __wakeup()
+    private function __wakeup()
     {
-        throw new Exception("Cannot unserialize singleton");
+        // disable unserialization
     }
 
-    public static function getInstance(): self
+    public static function getInstance(): Singleton
     {
         if (static::$instance === null) {
             static::$instance = new static();
