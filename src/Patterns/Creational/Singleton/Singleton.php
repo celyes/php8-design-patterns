@@ -24,12 +24,9 @@ class Singleton
 
     public static function getInstance(): self
     {
-        $subclass = static::class;
-
         if (static::$instance === null) {
             static::$instance = new static();
         }
-        
         return static::$instance;
     }
 }
