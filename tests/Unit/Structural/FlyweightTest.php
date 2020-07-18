@@ -13,9 +13,9 @@ final class FlyweightTest extends TestCase
     {
         $juiceShop = new JuiceShop(new JuiceMaker());
 
-        $juiceShop->newOrder('No sugar', 1);
-        $juiceShop->newOrder('With milk', 1);
-        $juiceShop->newOrder('Extra sugar', 3);
+        $juiceShop->newOrder('No sugar');
+        $juiceShop->newOrder('With milk');
+        $juiceShop->newOrder('Extra sugar');
 
         $this->assertCount(3, $juiceShop->serve());
         $this->assertIsArray($juiceShop->serve());
