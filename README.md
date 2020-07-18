@@ -1,6 +1,6 @@
 # PHP Design Patterns
 
-The most well-known design patterns written in PHP. [![HitCount](http://hits.dwyl.com/celyes/design-patterns-php.svg)](http://hits.dwyl.com/celyes/design-patterns-php)
+The most well-known design patterns written in PHP 7.
 
 ### Install & configuration
 
