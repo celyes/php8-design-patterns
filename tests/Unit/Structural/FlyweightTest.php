@@ -16,9 +16,7 @@ final class FlyweightTest extends TestCase
         $juiceShop->newOrder('No sugar');
         $juiceShop->newOrder('With milk');
         $juiceShop->newOrder('Extra sugar');
-
         $this->assertCount(3, $juiceShop->serve());
-        $this->assertIsArray($juiceShop->serve());
 
     }
     public function testIfFlyweightsAreCached()
