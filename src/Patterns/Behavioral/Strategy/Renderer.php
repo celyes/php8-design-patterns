@@ -2,7 +2,7 @@
 
 namespace Patterns\Behavioral\Strategy;
 
-class Renderer 
+class Renderer
 {
     /**
      * $strategy: the strategy to use
@@ -12,10 +12,10 @@ class Renderer
 
     private $strategy;
     /**
-     * 
+     *
      * @param   object  $strategy  the strategy to use
      *
-     * @return  void             
+     * @return  void
      */
 
     public function __construct($strategy)
@@ -24,11 +24,11 @@ class Renderer
     }
 
     /**
-     * return the rendered input 
+     * return the rendered input
      *
      * @param   string  $text  input to render
      *
-     * @return  string         the rendered input 
+     * @return  string         the rendered input
      */
 
     public function render(string $text)

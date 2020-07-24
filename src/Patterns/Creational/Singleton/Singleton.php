@@ -16,7 +16,7 @@ final class Singleton
     
     private function __clone()
     {
-        // disable cloning 
+        // disable cloning
     }
     
     private function __wakeup()

@@ -2,7 +2,7 @@
 
 namespace Patterns\Behavioral\Strategy\Concrete;
 
-class HTMLRendererStrategy implements RendererStrategy 
+class HTMLRendererStrategy implements RendererStrategy
 {
     /**
      * renderInput returns an escaped version of the input

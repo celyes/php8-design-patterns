@@ -26,7 +26,7 @@ class FileCacheReader implements Reader
      *
      * @param   FileReader  $fileReader  File reader class to use
      *
-     * @return  void                  
+     * @return  void
      */
 
     public function __construct(FileReader $fileReader)
@@ -39,7 +39,7 @@ class FileCacheReader implements Reader
      *
      * @param   string  $url  URL to read
      *
-     * @return  string  the retrieved content 
+     * @return  string  the retrieved content
      */
 
     public function open(string $url): string

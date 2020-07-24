@@ -2,7 +2,7 @@
 
 namespace Patterns\Behavioral\Strategy\Concrete;
 
-class JSONRendererStrategy implements RendererStrategy 
+class JSONRendererStrategy implements RendererStrategy
 {
     /**
      * renderInput returns the input as json

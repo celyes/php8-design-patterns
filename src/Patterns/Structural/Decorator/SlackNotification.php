@@ -4,24 +4,57 @@ namespace Patterns\Structural\Decorator;
 
 use Patterns\Structural\Decorator\Interfaces\Notification;
 
-class SlackNotification implements Notification 
+class SlackNotification implements Notification
 {
+    /**
+     * $notification Notification object
+     *
+     * @var object
+     */
     private $notification;
 
+    /**
+     * [__construct description]
+     *
+     * @param   Notification  $notification  Notification object
+     *
+     * @return  void
+     */
     public function __construct(Notification $notification)
     {
         $this->notification = $notification;
-        
     }
+
+    /**
+     * get notification message
+     *
+     * @return  string  notification message
+     */
+
     public function getMessage()
     {
         return $this->notification->getMessage() . " in Slack!";
     }
+
+    /**
+     * get notification channel
+     *
+     * @return  string  notification channel
+     */
+
     public function getChannel()
     {
         return $this->notification->getChannel() . " Slack";
     }
-    public function send(){
+
+    /**
+     * send notification
+     *
+     * @return  string  a phrase to show that notification is sent
+     */
+
+    public function send()
+    {
         return $this->notification->send() . " via Slack";
     }
 }

@@ -26,8 +26,8 @@ class DriveFacade
     public function park()
     {
         $this->drive
-        ->FindAParkingSpot()
-        ->ParkIntoSpot()
+        ->findAParkingSpot()
+        ->parkIntoSpot()
         ->reversetwistIgnitionKey();
     }
 }

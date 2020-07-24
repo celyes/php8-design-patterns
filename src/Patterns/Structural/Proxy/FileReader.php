@@ -11,7 +11,7 @@ class FileReader implements Reader
      *
      * @param   string  $url  URL to read
      *
-     * @return  string  the retrieved content 
+     * @return  string  the retrieved content
      */
 
     public function open(string $url): string
