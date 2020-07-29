@@ -1,6 +1,14 @@
 # PHP Design Patterns
 
-The most well-known design patterns written in PHP 7.
+The most well-known design patterns written in PHP 7.4
+
+### Requirements
+
+```
+    PHP: >=7.4
+    phpunit/phpunit: ^9
+    squizlabs/php_codesniffer: ^3.5
+```
 
 ### Install & configuration
 
@@ -30,4 +38,4 @@ vendor/bin/phpunit
 
 ### Issues
 
-[See here](https://github.com/celyes/design-patterns-php/issues) 
+[See here](https://github.com/celyes/design-patterns-php/issues)
