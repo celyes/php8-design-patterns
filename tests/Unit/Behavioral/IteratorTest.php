@@ -1,12 +1,13 @@
-<?php declare ( strict_types = 1 ) ;
+<?php declare (strict_types = 1);
 
 namespace Tests\Unit\Behavioral;
 
-use PHPUnit\Framework\TestCase;
-use Patterns\Behavioral\Iterator\CarsList;
 use Patterns\Behavioral\Iterator\Car;
+use Patterns\Behavioral\Iterator\CarsList;
+use PHPUnit\Framework\TestCase;
 
-final class IteratorTests extends TestCase {
+final class IteratorTests extends TestCase
+{
 
     public function testIfCanIterateOverCarList()
     {
@@ -16,7 +17,7 @@ final class IteratorTests extends TestCase {
         $carsList->add(new Car("Volkswagen", "Golf R"));
         $cars = [];
 
-        foreach($carsList as $car) {
+        foreach ($carsList as $car) {
             $cars[] = $car->getFullModel();
         }
 
@@ -24,7 +25,7 @@ final class IteratorTests extends TestCase {
             [
                 "Mercedes A45S AMG",
                 "Audi RS3",
-                "Volkswagen Golf R"
+                "Volkswagen Golf R",
             ],
             $cars
         );
@@ -35,7 +36,7 @@ final class IteratorTests extends TestCase {
         $carsList->add(new Car("Mercedes", "A45S AMG"));
         $this->assertCount(1, $carsList);
     }
-    
+
     public function testIfCanRemoveCarsFromTheList()
     {
         $car = new Car("Mercedes", "A45S AMG");
