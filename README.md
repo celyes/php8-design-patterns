@@ -36,6 +36,11 @@ any additions, improvements or modifications are welcome.
 vendor/bin/phpunit
 ```
 
+### Checking code standards are met
+```
+vendor/bin/phpcs src/Patterns --standard=PSR12
+```
+
 ### Issues
 
 [See here](https://github.com/celyes/design-patterns-php/issues)
