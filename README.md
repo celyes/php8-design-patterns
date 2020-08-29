@@ -34,6 +34,9 @@ any additions, improvements or modifications are welcome.
 
 ```bash
 composer test
+
+# for verbose tests
+composer test-verobse
 ```
 
 ### Checking code standards are met
