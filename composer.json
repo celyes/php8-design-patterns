@@ -22,5 +22,14 @@
     "psr-4": {
       "Patterns\\": "src/Patterns/"
     }
+  },
+  "scripts": {
+    "check": "vendor/bin/phpcs src/Patterns --standard=PSR12",
+    "test": "./vendor/bin/phpunit --colors=always", 
+    "test-verbose": "@test -vvv"
   }
 }
+
+
+
+

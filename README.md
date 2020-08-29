@@ -33,12 +33,13 @@ any additions, improvements or modifications are welcome.
 ### Running test
 
 ```bash
-vendor/bin/phpunit
+composer test
 ```
 
 ### Checking code standards are met
-```
-vendor/bin/phpcs src/Patterns --standard=PSR12
+
+```bash
+composer check
 ```
 
 ### Issues
