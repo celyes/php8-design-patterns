@@ -6,6 +6,7 @@ use Patterns\Structural\Flyweight\Types\OrangeJuice;
 
 class JuiceMaker
 {
+    protected $available = [];
     public function make(string $juiceType)
     {
         if (empty($this->available[$juiceType])) {

@@ -6,8 +6,6 @@ The most well-known design patterns written in PHP 7.4
 
 ```
     PHP: >=7.4
-    phpunit/phpunit: ^9
-    squizlabs/php_codesniffer: ^3.5
 ```
 
 ### Install & configuration
@@ -30,21 +28,28 @@ You can also fork this repo and clone it.
 
 any additions, improvements or modifications are welcome.
 
-### Running test
+### Running tests
 
 ```bash
 composer test
 
 # for verbose tests
-composer test-verobse
+composer test:verobse
 ```
 
-### Checking code standards are met
+### Check code standards
 
 ```bash
 composer check
 ```
 
+### Analyzing code
+
+```bash
+composer analyze:src
+```
+
 ### Issues
 
-[See here](https://github.com/celyes/design-patterns-php/issues)
+
+Issues can be opened [here](https://github.com/celyes/design-patterns-php/issues)

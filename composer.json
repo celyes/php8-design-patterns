@@ -16,7 +16,8 @@
   },
   "require-dev": {
     "phpunit/phpunit": "^9",
-    "squizlabs/php_codesniffer": "^3.5"
+    "squizlabs/php_codesniffer": "^3.5",
+    "phpstan/phpstan": "^0.12.42"
   },
   "autoload": {
     "psr-4": {
@@ -26,10 +27,8 @@
   "scripts": {
     "check": "vendor/bin/phpcs src/Patterns --standard=PSR12",
     "test": "./vendor/bin/phpunit --colors=always", 
-    "test-verbose": "@test -vvv"
+    "test:verbose": "@test -vvv",
+    "analyse:src": "vendor/bin/phpstan analyse src",
+    "analyse:debug": "vendor/bin/phpstan analyse --debug src"
   }
 }
-
-
-
-
