@@ -23,9 +23,14 @@ final class CommandTest extends TestCase
         $this->decreaseVolume = new DecreaseVolume($this->tv);
         $this->remote = new RemoteControl();
     }
-    public function testChannelCanBeChanged()
+
+    public function testVolumeCanBeIncreased()
     {
         $this->assertEquals('Volume is up', $this->remote->invoke($this->increaseVolume));
+    }
+
+    public function testVolumeCanBeDecreased()
+    {
         $this->assertEquals('Volume is down', $this->remote->invoke($this->decreaseVolume));
     }
 }
