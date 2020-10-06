@@ -11,17 +11,17 @@ final class Singleton
 
     private function __construct()
     {
-        // hide the contructor
+        return;
     }
     
     private function __clone()
     {
-        // disable cloning
+        return;
     }
     
     private function __wakeup()
     {
-        // disable unserialization
+        return;
     }
 
     public static function getInstance(): Singleton
