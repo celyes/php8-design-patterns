@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 namespace Patterns\Behavioral\Command\Interfaces;
 
-interface Command 
+interface Command
 {
     public function execute(): string;
 }
