@@ -2,6 +2,10 @@
 
 namespace Tests\Unit\Behavioral;
 
+use Patterns\Behavioral\Command\Television;
+use Patterns\Behavioral\Command\IncreaseVolume;
+use Patterns\Behavioral\Command\DecreaseVolume;
+use Patterns\Behavioral\Command\RemoteControl;
 use PHPUnit\Framework\TestCase;
 
 final class CommandTest extends TestCase
@@ -14,7 +18,7 @@ final class CommandTest extends TestCase
     {
         parent::setUp();
 
-        $this->tv = new Telivision();
+        $this->tv = new Television();
         $this->increaseVolume = new IncreaseVolume($this->tv);
         $this->decreaseVolume = new DecreaseVolume($this->tv);
         $this->remote = new RemoteControl();
