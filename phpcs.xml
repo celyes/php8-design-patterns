@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<ruleset  name="PHP_CodeSniffer">
+
+<description>PHPCS configuration file.</description>
+<!-- check all files in the app directory, feel free to add more files with:
+<file>FOLDER NAME</file>
+-->
+<file>src/Patterns/</file>
+
+<!-- ignore warnings and display ERRORS only -->
+<arg  value="np"/>
+
+<!-- enable color output -->
+
+<arg name="colors" />
+
+<!-- Our base rule: set to PSR12-->
+<rule  ref="PSR12"/>
+
+</ruleset>
+
