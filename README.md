@@ -1,11 +1,11 @@
 # PHP Design Patterns
 
-The most well-known design patterns written in PHP 7.4
+The most well-known design patterns written in PHP 8
 
 ### Requirements
 
 ```
-    PHP: >=8.0.0
+    PHP: >= 8.0.0
 ```
 
 ### Install & configuration
