@@ -5,7 +5,7 @@ The most well-known design patterns written in PHP 7.4
 ### Requirements
 
 ```
-    PHP: >=7.4
+    PHP: >=8.0.0
 ```
 
 ### Install & configuration
