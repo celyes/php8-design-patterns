@@ -45,7 +45,7 @@ class Drive
         return $this;
     }
 
-    public function reversetwistIgnitionKey()
+    public function reverseTwistIgnitionKey()
     {
         echo "Car is parked now...";
     }

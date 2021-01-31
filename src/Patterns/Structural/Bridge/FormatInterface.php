@@ -4,11 +4,8 @@ namespace Patterns\Structural\Bridge;
 
 abstract class FormatInterface
 {
-    protected $implementation;
-
-    public function __construct($formatter)
+    public function __construct(protected $implementation)
     {
-        $this->implementation = $formatter;
     }
     abstract public function get(): string;
 }

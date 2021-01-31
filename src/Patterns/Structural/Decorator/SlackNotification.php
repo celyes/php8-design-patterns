@@ -7,22 +7,14 @@ use Patterns\Structural\Decorator\Interfaces\Notification;
 class SlackNotification implements Notification
 {
     /**
-     * $notification Notification object
-     *
-     * @var object
-     */
-    private $notification;
-
-    /**
      * [__construct description]
      *
      * @param   Notification  $notification  Notification object
      *
      * @return  void
      */
-    public function __construct(Notification $notification)
+    public function __construct(private Notification $notification)
     {
-        $this->notification = $notification;
     }
 
     /**

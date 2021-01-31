@@ -8,10 +8,8 @@ use Patterns\Structural\Adapter\Braintree\PayWithBraintree;
 
 class StripeToBraintree implements StripeInterface
 {
-    public PayWithBraintree $braintree;
-    public function __construct(PayWithBraintree $braintree)
+    public function __construct(public PayWithBraintree $braintree)
     {
-        $this->braintree = $braintree;
     }
     public function addElement(int $element): void
     {

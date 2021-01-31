@@ -6,11 +6,9 @@ use Patterns\Structural\Facade\Submodules\Drive;
 
 class DriveFacade
 {
-    private $drive;
 
-    public function __construct(Drive $drive)
+    public function __construct(protected Drive $drive)
     {
-        $this->drive = $drive;
     }
 
     public function startDriving()
@@ -28,6 +26,6 @@ class DriveFacade
         $this->drive
         ->findAParkingSpot()
         ->parkIntoSpot()
-        ->reversetwistIgnitionKey();
+        ->reverseTwistIgnitionKey();
     }
 }

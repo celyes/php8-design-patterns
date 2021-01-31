@@ -6,22 +6,13 @@ use Patterns\Behavioral\State\Mutators\StateInterface;
 
 class Article
 {
-
-    /**
-     * $state
-     *
-     * @var StateInterface
-     */
-    protected $state;
-
     /**
      *
      * @param   StateInterface  $state  state object
      *
      */
-    public function __construct(StateInterface $state)
+    public function __construct(protected StateInterface $state)
     {
-        $this->setStatus($state);
     }
 
     /**

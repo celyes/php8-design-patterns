@@ -4,13 +4,8 @@ namespace Patterns\Behavioral\Iterator;
 
 class Car
 {
-    private $manufacturer;
-    private $model;
-
-    public function __construct(string $manufacturer, string $model)
+    public function __construct(private string $manufacturer, private string $model)
     {
-        $this->manufacturer = $manufacturer;
-        $this->model = $model;
     }
     
     public function getManufacturer(): string

@@ -10,7 +10,6 @@ class Renderer
      * @var object
      */
 
-    private $strategy;
     /**
      *
      * @param   object  $strategy  the strategy to use
@@ -18,9 +17,8 @@ class Renderer
      * @return  void
      */
 
-    public function __construct($strategy)
+    public function __construct(private $strategy)
     {
-        $this->strategy = $strategy;
     }
 
     /**

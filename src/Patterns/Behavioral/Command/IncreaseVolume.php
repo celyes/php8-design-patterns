@@ -6,10 +6,9 @@ use Patterns\Behavioral\Command\Interfaces\Command;
 
 class IncreaseVolume implements Command
 {
-    protected $receiver;
-    public function __construct($receiver)
+
+    public function __construct(protected $receiver)
     {
-        $this->receiver = $receiver;
     }
     public function execute(): string
     {

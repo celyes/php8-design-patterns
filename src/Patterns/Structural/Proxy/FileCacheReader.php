@@ -7,31 +7,22 @@ use Patterns\Structural\Proxy\Interfaces\Reader;
 class FileCacheReader implements Reader
 {
     /**
-     * File reader class
-     *
-     * @var Object
-     */
-
-    private $reader;
-    
-    /**
      * Cache the content...
      *
-     * @var array
+     * @var array $cache
      */
     private array $cache = [];
     
     /**
      * __construct assign values
      *
-     * @param   FileReader  $fileReader  File reader class to use
+     * @param   FileReader  $reader  File reader class to use
      *
      * @return  void
      */
 
-    public function __construct(FileReader $fileReader)
+    public function __construct(private FileReader $reader)
     {
-        $this->reader = $fileReader;
     }
 
     /**
