@@ -24,28 +24,28 @@ class CarsList implements Countable, Iterator
         }
         $this->cars = array_values($this->cars);
     }
-    public function count()
+    public function count(): int
     {
         return count($this->cars);
     }
 
-    public function current()
+    public function current(): mixed
     {
         return $this->cars[$this->index];
     }
-    public function key()
+    public function key(): int
     {
         return $this->index;
     }
-    public function next()
+    public function next(): void
     {
         $this->index++;
     }
-    public function rewind()
+    public function rewind(): void
     {
         $this->index = 0;
     }
-    public function valid()
+    public function valid(): bool
     {
         return isset($this->cars[$this->index]);
     }
