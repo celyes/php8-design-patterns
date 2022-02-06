@@ -2,7 +2,7 @@
 
 namespace Patterns\Creational\Builder\Models;
 
-class Creature
+abstract class Creature
 {
 
     private array $data = [];
