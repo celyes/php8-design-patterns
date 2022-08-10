@@ -25,7 +25,7 @@ class EmailNotification implements Notification
      * @return  string  notification message
      */
 
-    public function getMessage()
+    public function getMessage(): string
     {
         return $this->notification->getMessage() . " in your mailbox!";
     }
@@ -36,7 +36,7 @@ class EmailNotification implements Notification
      * @return  string  notification channel
      */
 
-    public function getChannel()
+    public function getChannel(): string
     {
         return $this->notification->getChannel() . " E-Mail";
     }
@@ -47,7 +47,7 @@ class EmailNotification implements Notification
      * @return  string  a phrase to show that notification is sent
      */
     
-    public function send()
+    public function send(): string
     {
         return $this->notification->send() . " via email";
     }

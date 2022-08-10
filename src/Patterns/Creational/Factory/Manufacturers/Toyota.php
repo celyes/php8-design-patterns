@@ -2,9 +2,10 @@
 
 namespace Patterns\Creational\Factory\Manufacturers;
 
-class Toyota implements Vehicle
+class Toyota implements Manufacturer
 {
-    public function __construct()
+    
+    public function motto(): string
     {
         return "We build the most reliable cars ever!";
     }

@@ -4,5 +4,5 @@ namespace Patterns\Behavioral\State\Mutators;
 
 interface StateInterface
 {
-    public function status();
+    public function status(): string;
 }

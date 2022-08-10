@@ -8,7 +8,7 @@ use Patterns\Creational\Prototype\TruckPrototype;
 
 final class PrototypeTest extends TestCase {
 
-    public function testIfObjectsAreCloning() 
+    public function testIfObjectsAreCloning(): void
     {
         $carPrototype = new CarPrototype();
         $car = clone $carPrototype;
@@ -17,8 +17,6 @@ final class PrototypeTest extends TestCase {
         $truckPrototype = new TruckPrototype();
         $truck = clone $truckPrototype;
         $this->assertInstanceOf(TruckPrototype::class, $truck);
-        
-        
     }
 
 }

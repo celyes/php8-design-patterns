@@ -16,6 +16,7 @@ class FileReader implements Reader
 
     public function open(string $url): string
     {
-        return file_get_contents($url);
+        $content = file_get_contents($url);
+        return $content ?: '';
     }
 }

@@ -6,7 +6,7 @@ use Patterns\Behavioral\Observer\Interfaces\Observer;
 
 class SlackNotifier implements Observer
 {
-    public function onEventAdded(string $event)
+    public function onEventAdded(string $event): mixed
     {
         return $event . " - slack";
     }

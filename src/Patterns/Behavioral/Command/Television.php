@@ -2,14 +2,16 @@
 
 namespace Patterns\Behavioral\Command;
 
-class Television
+use Patterns\Behavioral\Command\Interfaces\Commandable;
+
+class Television implements Commandable
 {
-    public function volumeup()
+    public function volume_up(): string
     {
         return "Volume is up";
     }
 
-    public function volumedown()
+    public function volume_down(): string
     {
         return "Volume is down";
     }

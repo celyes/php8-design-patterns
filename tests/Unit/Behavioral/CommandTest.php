@@ -2,18 +2,21 @@
 
 namespace Tests\Unit\Behavioral;
 
-use Patterns\Behavioral\Command\Television;
-use Patterns\Behavioral\Command\IncreaseVolume;
-use Patterns\Behavioral\Command\DecreaseVolume;
-use Patterns\Behavioral\Command\RemoteControl;
 use PHPUnit\Framework\TestCase;
+use Patterns\Behavioral\Command\Television;
+use Patterns\Behavioral\Command\RemoteControl;
+use Patterns\Behavioral\Command\DecreaseVolume;
+use Patterns\Behavioral\Command\IncreaseVolume;
+use Patterns\Behavioral\Command\Interfaces\Device;
+use Patterns\Behavioral\Command\Interfaces\Command;
+use Patterns\Behavioral\Command\Interfaces\Commandable;
 
 final class CommandTest extends TestCase
 {
-    protected $tv;
-    protected $increaseVolume;
-    protected $decreaseVolume;
-    protected $remote;
+    protected Commandable $tv;
+    protected Command $increaseVolume;
+    protected Command $decreaseVolume;
+    protected Device $remote;
     public function setUp(): void
     {
         parent::setUp();
@@ -24,12 +27,12 @@ final class CommandTest extends TestCase
         $this->remote = new RemoteControl();
     }
 
-    public function testVolumeCanBeIncreased()
+    public function testVolumeCanBeIncreased(): void
     {
         $this->assertEquals('Volume is up', $this->remote->invoke($this->increaseVolume));
     }
 
-    public function testVolumeCanBeDecreased()
+    public function testVolumeCanBeDecreased(): void
     {
         $this->assertEquals('Volume is down', $this->remote->invoke($this->decreaseVolume));
     }

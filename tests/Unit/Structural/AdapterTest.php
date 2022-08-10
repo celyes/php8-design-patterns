@@ -9,8 +9,7 @@ use Patterns\Structural\Adapter\Braintree\PayWithBraintree;
 final class AdapterTest extends TestCase 
 {
     
-
-    public function testIfAdapterIsWorking() 
+    public function testIfAdapterIsWorking(): void 
     {
         $adapter = new StripeToBraintree(new PayWithBraintree());
         $adapter->addElement(2500);

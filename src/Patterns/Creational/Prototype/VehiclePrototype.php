@@ -5,7 +5,7 @@ namespace Patterns\Creational\Prototype;
 abstract class VehiclePrototype
 {
 
-    private $model;
+    private string $model;
 
     abstract public function __clone();
 

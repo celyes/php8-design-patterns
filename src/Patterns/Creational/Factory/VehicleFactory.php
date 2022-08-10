@@ -2,19 +2,21 @@
 
 namespace Patterns\Creational\Factory;
 
-use Patterns\Creational\Factory\Manufacturers\Mercedes;
-use Patterns\Creational\Factory\Manufacturers\Toyota;
-
-class VehicleFactory
+use Patterns\Creational\Factory\Manufacturers\Manufacturer;
+use Patterns\Creational\Factory\Exceptions\ManufacturerNotFoundException;
+class VehicleFactory implements Factory
 {
 
-    public function makeMercedes(): Mercedes
+    /**
+     * @param string $carBrand
+     * @return object
+     */
+    public function make(string $carBrand): object
     {
-        return new Mercedes();
-    }
-
-    public function makeToyota(): Toyota
-    {
-        return new Toyota();
+        $className = "\Patterns\Creational\Factory\Manufacturers\\" . ucfirst($carBrand);
+        if (class_exists($className)) {
+            return new $className;
+        }
+        throw new ManufacturerNotFoundException('Manufacturer not found!');
     }
 }

@@ -9,13 +9,14 @@ use Patterns\Structural\Composite\Components\Track;
 final class CompositeTest extends TestCase 
 {
    
-    public function testIfSongsCanBeAddedToPlaylist()
+    public function testIfSongsCanBeAddedToPlaylist(): void
     {
         $playlist = new Playlist();
         $playlist->addTrack(new Track("Stellardrone", "Echoes", "/music/echoes.mp3"));
         $this->assertEquals("/music/echoes.mp3", $playlist->play()); 
-    }   
-    public function testIfNextTrackPlays()
+    }
+    
+    public function testIfNextTrackPlays(): void
     {
         $playlist = new Playlist();
         $playlist->addTrack(new Track("Stellardrone", "Echoes", "/music/echoes.mp3"));
@@ -24,7 +25,7 @@ final class CompositeTest extends TestCase
         $this->assertEquals("/music/pale-blue-dot.mp3", $playlist->play());
     }
        
-    public function testIfPreviousTrackPlays()
+    public function testIfPreviousTrackPlays(): void
     {
         $playlist = new Playlist();
         $playlist->addTrack(new Track("Stellardrone", "Echoes", "/music/echoes.mp3"));

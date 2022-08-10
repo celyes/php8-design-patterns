@@ -9,7 +9,7 @@ use PHPUnit\Framework\TestCase;
 final class IteratorTests extends TestCase
 {
 
-    public function testIfCanIterateOverCarList()
+    public function testIfCanIterateOverCarList(): void
     {
         $carsList = new CarsList();
         $carsList->add(new Car("Mercedes", "A45S AMG"));
@@ -30,14 +30,15 @@ final class IteratorTests extends TestCase
             $cars
         );
     }
-    public function testIfCanAddNewCarsToTheList()
+
+    public function testIfCanAddNewCarsToTheList(): void
     {
         $carsList = new CarsList();
         $carsList->add(new Car("Mercedes", "A45S AMG"));
         $this->assertCount(1, $carsList);
     }
 
-    public function testIfCanRemoveCarsFromTheList()
+    public function testIfCanRemoveCarsFromTheList(): void
     {
         $car = new Car("Mercedes", "A45S AMG");
         $carsList = new CarsList();

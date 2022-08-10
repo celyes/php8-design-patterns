@@ -11,7 +11,7 @@ class Track implements PlayerInterface
     {
     }
 
-    public function play()
+    public function play(): string
     {
         return $this->path;
     }

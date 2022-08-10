@@ -12,10 +12,11 @@ class HTMLRendererStrategy implements RendererStrategy
      * @return  string         escaped input
      */
 
-    public function renderInput(string $text): string
+    public function renderInput(string $text): string|false
     {
 
         // render html - htmlspecialchars() is used only for illustration
+        // You can do whatever to render HTML here...
 
         return htmlspecialchars($text);
     }

@@ -2,10 +2,10 @@
 
 namespace Patterns\Structural\Bridge;
 
-class FormatService extends FormatInterface
+class FormattingService extends FormattingInterface
 {
 
-    public function get(): string
+    public function get(): string|false
     {
         return $this->implementation->format("Hello, world");
     }

@@ -13,7 +13,7 @@ class SimpleNotification implements Notification
      * @return  string  notification message
      */
 
-    public function getMessage()
+    public function getMessage(): string
     {
         return "New message";
     }
@@ -24,7 +24,7 @@ class SimpleNotification implements Notification
      * @return  string  notification channel
      */
 
-    public function getChannel()
+    public function getChannel(): string
     {
         return "Sent via";
     }
@@ -35,7 +35,7 @@ class SimpleNotification implements Notification
      * @return  string  a phrase to show that notification is sent
      */
     
-    public function send()
+    public function send(): string
     {
         return "Notification sent";
     }

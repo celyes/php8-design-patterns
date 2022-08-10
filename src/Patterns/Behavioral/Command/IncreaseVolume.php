@@ -3,15 +3,16 @@
 namespace Patterns\Behavioral\Command;
 
 use Patterns\Behavioral\Command\Interfaces\Command;
+use Patterns\Behavioral\Command\Interfaces\Commandable;
 
 class IncreaseVolume implements Command
 {
 
-    public function __construct(protected $receiver)
+    public function __construct(protected Commandable $receiver)
     {
     }
     public function execute(): string
     {
-        return $this->receiver->volumeup();
+        return $this->receiver->volume_up();
     }
 }

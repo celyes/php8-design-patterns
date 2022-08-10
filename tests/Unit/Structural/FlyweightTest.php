@@ -3,28 +3,29 @@
 namespace Tests\Unit\Structural;
 
 use PHPUnit\Framework\TestCase;
-use Patterns\Structural\Flyweight\JuiceMaker;
 use Patterns\Structural\Flyweight\JuiceShop;
+use Patterns\Structural\Flyweight\JuiceMaker;
+use Patterns\Structural\Flyweight\Types\AppleJuice;
 use Patterns\Structural\Flyweight\Types\OrangeJuice;
 
 final class FlyweightTest extends TestCase 
 {
-    public function testIfOrdersAreTaken() 
+    public function testIfOrdersAreTaken(): void
     {
         $juiceShop = new JuiceShop(new JuiceMaker());
 
-        $juiceShop->newOrder('No sugar');
-        $juiceShop->newOrder('With milk');
-        $juiceShop->newOrder('Extra sugar');
-        $this->assertCount(3, $juiceShop->serve());
+        $juiceShop->newOrder(new OrangeJuice());
+        $juiceShop->newOrder(new AppleJuice());
+        $this->assertCount(2, $juiceShop->serve());
 
     }
-    public function testIfFlyweightsAreCached()
+    public function testIfFlyweightsAreCached(): void
     {
         $juiceShop = new JuiceShop(new JuiceMaker());
-        $juiceShop->newOrder('No sugar');
+        $juiceShop->newOrder(new OrangeJuice());
+        $juiceShop->newOrder(new AppleJuice());
         $this->assertInstanceOf(OrangeJuice::class, $juiceShop->serve()[0]);
-
+        $this->assertInstanceOf(AppleJuice::class, $juiceShop->serve()[1]);
     }
 
 }

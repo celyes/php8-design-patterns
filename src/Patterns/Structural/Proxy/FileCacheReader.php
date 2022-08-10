@@ -9,19 +9,19 @@ class FileCacheReader implements Reader
     /**
      * Cache the content...
      *
-     * @var array $cache
+     * @var array<string> $cache
      */
     private array $cache = [];
     
     /**
      * __construct assign values
      *
-     * @param   FileReader  $reader  File reader class to use
+     * @param   Reader  $reader  File reader class to use
      *
      * @return  void
      */
 
-    public function __construct(private FileReader $reader)
+    public function __construct(private Reader $reader)
     {
     }
 
@@ -30,7 +30,7 @@ class FileCacheReader implements Reader
      *
      * @param   string  $url  URL to read
      *
-     * @return  string  the retrieved content
+     * @return  string the retrieved content
      */
 
     public function open(string $url): string
@@ -39,6 +39,6 @@ class FileCacheReader implements Reader
             $content = $this->reader->open($url);
             $this->cache[$url] = $content;
         }
-        return $this->cache[$url];
+        return $this->cache[$url] ?? '';
     }
 }

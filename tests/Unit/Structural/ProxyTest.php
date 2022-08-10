@@ -9,17 +9,18 @@ use Patterns\Structural\Proxy\FileCacheReader;
 final class ProxyTest extends TestCase 
 {
 
-    public function testIfFileCacheReaderIsProxyingFileReader()
+    public function testIfFileCacheReaderIsProxyingFileReader(): void
     {
-        // Normal file reader...
-        $reader = new FileReader();
-        $file = $reader->open('http://www.example.com/');
+        $filereader = $this->getMockBuilder(FileReader::class)
+        ->disableOriginalConstructor()
+        ->getMock();
 
+        $filereader->method('open')
+        ->willReturn("some content...");
         // Proxy class for caching file content...
-        $cachedReader = new FileCacheReader(new FileReader());
+        $cachedReader = new FileCacheReader($filereader);
         $cachedFile = $cachedReader->open('http://www.example.com/');
 
-        $this->assertEquals($file, $cachedFile);
-
+        $this->assertEquals('some content...', $cachedFile);
     }
 }

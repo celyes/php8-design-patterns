@@ -4,5 +4,5 @@ namespace Patterns\Behavioral\Observer\Interfaces;
 
 interface Observer
 {
-    public function onEventAdded(string $event);
+    public function onEventAdded(string $event): mixed;
 }

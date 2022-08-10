@@ -3,12 +3,13 @@
 namespace Tests\Unit\Structural;
 
 use PHPUnit\Framework\TestCase;
+use Patterns\Structural\Facade\Facade;
 use Patterns\Structural\Facade\DriveFacade;
 use Patterns\Structural\Facade\Submodules\Drive;
 
 final class FacadeTest extends TestCase 
 {
-    private $drivingExperience;
+    private Facade $drivingExperience;
     
     public function setUp(): void
     {
@@ -16,15 +17,15 @@ final class FacadeTest extends TestCase
         $this->drivingExperience = new DriveFacade(new Drive());
     }
 
-    public function testStartDrivingFunction()
+    public function testStartDrivingFunction(): void
     {
         $this->expectOutputString('Driving...');
-        $this->drivingExperience ->startDriving();
+        $this->drivingExperience->startAction();
     }
 
-    public function testParkingAndStoppingFunction()
+    public function testParkingAndStoppingFunction(): void
     {
         $this->expectOutputString('Car is parked now...');
-        $this->drivingExperience->park();
+        $this->drivingExperience->finishAction();
     }
 } 

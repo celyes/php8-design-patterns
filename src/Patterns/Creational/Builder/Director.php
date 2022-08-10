@@ -2,14 +2,15 @@
 
 namespace Patterns\Creational\Builder;
 
-use Patterns\Creational\Builder\PersonBuilder;
+use Patterns\Creational\Builder\Buildable;
+use Patterns\Creational\Builder\Models\Creature;
 
 class Director
 {
-    public function create(PersonInterface $builder): object
+    public function create(Buildable $builder): Creature
     {
         $person = $builder
-            ->createPerson()
+            ->create()
             ->addName("Ilyes")
             ->addAge(25)
             ->getPerson();

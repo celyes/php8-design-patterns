@@ -4,7 +4,7 @@ namespace Patterns\Structural\Decorator\Interfaces;
 
 interface Notification
 {
-    public function getMessage();
-    public function getChannel();
-    public function send();
+    public function getMessage(): string;
+    public function getChannel(): string;
+    public function send(): string;
 }

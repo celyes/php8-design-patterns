@@ -4,12 +4,15 @@ namespace Patterns\Creational\Builder;
 
 use Patterns\Creational\Builder\Models\Person;
 
-class PersonBuilder implements PersonInterface
+class PersonBuilder implements Buildable
 {
 
+    /**
+     * @var Person $person
+     */
     private Person $person;
 
-    public function createPerson(): self
+    public function create(): self
     {
         $this->person = new Person();
         return $this;

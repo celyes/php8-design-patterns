@@ -4,14 +4,14 @@ namespace Patterns\Structural\Facade;
 
 use Patterns\Structural\Facade\Submodules\Drive;
 
-class DriveFacade
+class DriveFacade implements Facade
 {
 
     public function __construct(protected Drive $drive)
     {
     }
 
-    public function startDriving()
+    public function startAction(): void
     {
         $this->drive
         ->getInAndBuckleUp()
@@ -21,7 +21,9 @@ class DriveFacade
         ->shiftIntoFirst()
         ->accelerate();
     }
-    public function park()
+
+
+    public function finishAction(): void
     {
         $this->drive
         ->findAParkingSpot()

@@ -9,13 +9,14 @@ use Patterns\Creational\AbstractFactory\Models\MercedesModel;
 final class AbstractFactoryTests extends TestCase {
 
     
-    public function testCanCreateMercedesModel()
+    public function testCanCreateMercedesModel(): void
     {
         $mercedes = new MercedesFactory();
         $model = $mercedes->makeModel();
         $this->assertInstanceOf(MercedesModel::class, $model);
     }
-    public function testCanGetMercedesModelDescription()
+    
+    public function testCanGetMercedesModelDescription(): void
     {
         $mercedes = new MercedesFactory();
         $model = $mercedes->makeModel();

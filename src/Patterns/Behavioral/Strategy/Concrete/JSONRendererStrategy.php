@@ -12,7 +12,7 @@ class JSONRendererStrategy implements RendererStrategy
      * @return  string         JSON input
      */
 
-    public function renderInput(string $text): string
+    public function renderInput(string $text): string|false
     {
         return json_encode(['message' => $text]);
     }

@@ -4,5 +4,5 @@ namespace Patterns\Structural\Composite;
 
 interface PlayerInterface
 {
-    public function play();
+    public function play(): string;
 }

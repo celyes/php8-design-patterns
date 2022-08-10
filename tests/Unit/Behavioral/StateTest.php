@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 final class StateTests extends TestCase
 {
 
-    public function testIfStateIsChangingCorrectly()
+    public function testIfStateIsChangingCorrectly(): void
     {
         $post = new Article(new Pending());
         $this->assertEquals('pending', $post->getStatus());

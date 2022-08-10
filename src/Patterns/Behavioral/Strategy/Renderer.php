@@ -2,16 +2,18 @@
 
 namespace Patterns\Behavioral\Strategy;
 
+use Patterns\Behavioral\Strategy\Concrete\RendererStrategy;
+
 class Renderer
 {
     /**
      *
-     * @param   object  $strategy  the strategy to use
+     * @param   RendererStrategy  $strategy  the strategy to use
      *
      * @return  void
      */
 
-    public function __construct(private $strategy)
+    public function __construct(private RendererStrategy $strategy)
     {
     }
 
@@ -20,10 +22,10 @@ class Renderer
      *
      * @param   string  $text  input to render
      *
-     * @return  string         the rendered input
+     * @return  string|false         the rendered input
      */
 
-    public function render(string $text)
+    public function render(string $text): string | false
     {
         return $this->strategy->renderInput($text);
     }

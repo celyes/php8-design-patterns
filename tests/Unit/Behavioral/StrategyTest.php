@@ -9,7 +9,7 @@ use Patterns\Behavioral\Strategy\Concrete\JSONRendererStrategy;
 
 final class StrategyTest extends TestCase {
 
-    public function testIfHTMLRendererRendersInput()
+    public function testIfHTMLRendererRendersInput(): void
     {
         $renderer = new Renderer(new HTMLRendererStrategy());
         $this->assertEquals(
@@ -18,10 +18,10 @@ final class StrategyTest extends TestCase {
         );
     }
 
-    public function testIfJSONRendererRendersInput()
+    public function testIfJSONRendererRendersInput(): void
     {
         $renderer = new Renderer(new JSONRendererStrategy());
-        $this->assertJson($renderer->render("This is some <b>bold</b> text"));
+        $this->assertJson((string) $renderer->render("This is some <b>bold</b> text"));
     }
 
 }

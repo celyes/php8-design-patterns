@@ -2,16 +2,23 @@
 
 namespace Patterns\Structural\Flyweight;
 
+use Patterns\Structural\Flyweight\Types\JuiceType;
 use Patterns\Structural\Flyweight\Types\OrangeJuice;
 
 class JuiceMaker
 {
-    protected $available = [];
-    public function make(string $juiceType)
+
+    /**
+     * @var array<JuiceType> $availableJuiceTypes
+     */
+    protected array $availableJuiceTypes = [];
+
+    /**
+     * @param JuiceType $juiceType
+     */
+    public function make(JuiceType $juiceType): JuiceType
     {
-        if (empty($this->available[$juiceType])) {
-            $this->available[$juiceType] = new OrangeJuice();
-        }
-        return $this->available[$juiceType];
+        $this->availableJuiceTypes[] = $juiceType;
+        return $this->availableJuiceTypes[count($this->availableJuiceTypes) - 1];
     }
 }
