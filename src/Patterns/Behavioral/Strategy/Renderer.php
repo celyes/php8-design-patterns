@@ -5,12 +5,6 @@ namespace Patterns\Behavioral\Strategy;
 class Renderer
 {
     /**
-     * $strategy: the strategy to use
-     *
-     * @var object
-     */
-
-    /**
      *
      * @param   object  $strategy  the strategy to use
      *

@@ -8,7 +8,8 @@ final class Singleton
 {
     /**
      * hold an instance of the class
-     * @var instance
+     * @var static instance
+     * 
      * */
     private static $instance = null;
 
@@ -16,10 +17,13 @@ final class Singleton
     {
         return;
     }
+
     /**
+     * 
      * return an instance of the class
-     * @method getInstance 
+     * @method getInstance() 
      * @return Singleton
+     * 
      * */
     public static function getInstance(): Singleton
     {

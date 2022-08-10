@@ -22,7 +22,7 @@ final class FlyweightTest extends TestCase
     public function testIfFlyweightsAreCached()
     {
         $juiceShop = new JuiceShop(new JuiceMaker());
-        $juiceShop->newOrder('No sugar', 1);
+        $juiceShop->newOrder('No sugar');
         $this->assertInstanceOf(OrangeJuice::class, $juiceShop->serve()[0]);
 
     }
