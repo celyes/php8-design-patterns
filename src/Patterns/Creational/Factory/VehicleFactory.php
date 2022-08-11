@@ -4,9 +4,9 @@ namespace Patterns\Creational\Factory;
 
 use Patterns\Creational\Factory\Manufacturers\Manufacturer;
 use Patterns\Creational\Factory\Exceptions\ManufacturerNotFoundException;
+
 class VehicleFactory implements Factory
 {
-
     /**
      * @param string $carBrand
      * @return object
@@ -15,7 +15,7 @@ class VehicleFactory implements Factory
     {
         $className = "\Patterns\Creational\Factory\Manufacturers\\" . ucfirst($carBrand);
         if (class_exists($className)) {
-            return new $className;
+            return new $className();
         }
         throw new ManufacturerNotFoundException('Manufacturer not found!');
     }

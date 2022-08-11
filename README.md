@@ -5,7 +5,7 @@ The most well-known design patterns written in PHP 8
 ### Requirements
 
 ```
-    PHP: >= 8.0.0
+PHP: >= 8.0.0
 ```
 
 ### Install & configuration
@@ -46,7 +46,7 @@ composer check
 ### Analyzing code
 
 ```bash
-composer analyze:src
+composer analyse:src
 ```
 
 ### Issues

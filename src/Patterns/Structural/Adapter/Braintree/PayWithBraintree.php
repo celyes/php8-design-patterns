@@ -8,7 +8,7 @@ class PayWithBraintree implements BraintreeInterface
      * @var array<int> $items
      */
     public $items = [];
-        
+
     /**
      * @param int $item
      * @return void
@@ -17,7 +17,7 @@ class PayWithBraintree implements BraintreeInterface
     {
         $this->items[] = $item;
     }
-    
+
     /**
      * @return int
      */

@@ -3,14 +3,14 @@
 namespace Patterns\Structural\Adapter\Stripe;
 
 class PayWithStripe implements StripeInterface
-{        
+{
     /**
      * @var array<int> $elements
      * @return void
      */
     public $elements = [];
-    
-    
+
+
     /**
      * @param int $element
      * @return void

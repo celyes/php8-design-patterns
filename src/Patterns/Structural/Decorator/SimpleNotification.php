@@ -6,7 +6,6 @@ use Patterns\Structural\Decorator\Interfaces\Notification;
 
 class SimpleNotification implements Notification
 {
-    
     /**
      * get notification message
      *
@@ -28,13 +27,13 @@ class SimpleNotification implements Notification
     {
         return "Sent via";
     }
-    
+
     /**
      * send notification
      *
      * @return  string  a phrase to show that notification is sent
      */
-    
+
     public function send(): string
     {
         return "Notification sent";

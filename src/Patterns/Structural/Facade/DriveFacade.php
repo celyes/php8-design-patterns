@@ -6,7 +6,6 @@ use Patterns\Structural\Facade\Submodules\Drive;
 
 class DriveFacade implements Facade
 {
-
     public function __construct(protected Drive $drive)
     {
     }

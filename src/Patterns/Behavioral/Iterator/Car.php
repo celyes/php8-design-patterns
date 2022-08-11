@@ -7,7 +7,7 @@ class Car
     public function __construct(private string $manufacturer, private string $model)
     {
     }
-    
+
     public function getManufacturer(): string
     {
         return $this->manufacturer;

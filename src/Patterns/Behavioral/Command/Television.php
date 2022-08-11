@@ -6,12 +6,12 @@ use Patterns\Behavioral\Command\Interfaces\Commandable;
 
 class Television implements Commandable
 {
-    public function volume_up(): string
+    public function volumeUp(): string
     {
         return "Volume is up";
     }
 
-    public function volume_down(): string
+    public function volumeDown(): string
     {
         return "Volume is down";
     }

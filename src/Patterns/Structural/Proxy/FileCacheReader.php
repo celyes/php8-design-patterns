@@ -12,7 +12,7 @@ class FileCacheReader implements Reader
      * @var array<string> $cache
      */
     private array $cache = [];
-    
+
     /**
      * __construct assign values
      *

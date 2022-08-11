@@ -7,7 +7,6 @@ use Patterns\Behavioral\Observer\Interfaces\Observer;
 
 class Publisher implements Observable
 {
-
     /**
      * @var array<Observer> $subscribers
      */
@@ -28,7 +27,7 @@ class Publisher implements Observable
     {
         $this->subscribers[] = $subscriber;
     }
-    
+
     /**
      * @return array<Observer>
      */

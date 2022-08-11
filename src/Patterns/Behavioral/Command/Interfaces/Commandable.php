@@ -2,8 +2,8 @@
 
 namespace Patterns\Behavioral\Command\Interfaces;
 
-interface Commandable 
+interface Commandable
 {
-    public function volume_up(): string;
-    public function volume_down(): string;
+    public function volumeUp(): string;
+    public function volumeDown(): string;
 }

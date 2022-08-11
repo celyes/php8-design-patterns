@@ -4,7 +4,6 @@ namespace Patterns\Creational\Builder\Models;
 
 abstract class Creature
 {
-
     /**
      * @var array<mixed> $data
      */
@@ -13,5 +12,5 @@ abstract class Creature
     public function setProperty(mixed $key, mixed $value): void
     {
         $this->data[$key] = $value;
-    } 
+    }
 }

@@ -4,7 +4,6 @@ namespace Patterns\Structural\Composite;
 
 class Playlist implements PlayerInterface
 {
-
     /**
      * @var array<PlayerInterface> $songs
      */

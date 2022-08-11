@@ -7,7 +7,6 @@ use Patterns\Structural\Flyweight\Types\OrangeJuice;
 
 class JuiceMaker
 {
-
     /**
      * @var array<JuiceType> $availableJuiceTypes
      */

@@ -6,14 +6,14 @@ use Patterns\Structural\Flyweight\Types\JuiceType;
 
 class JuiceShop
 {
-
     /**
      * @var array<JuiceType> $orders
      */
     private $orders;
 
     public function __construct(private JuiceMaker $maker)
-    {}
+    {
+    }
 
     /**
      * @param JuiceType $type

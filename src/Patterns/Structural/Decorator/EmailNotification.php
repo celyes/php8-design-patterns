@@ -6,7 +6,6 @@ use Patterns\Structural\Decorator\Interfaces\Notification;
 
 class EmailNotification implements Notification
 {
-
     /**
      * [__construct description]
      *
@@ -18,7 +17,7 @@ class EmailNotification implements Notification
     public function __construct(private Notification $notification)
     {
     }
-    
+
     /**
      * get notification message
      *
@@ -46,7 +45,7 @@ class EmailNotification implements Notification
      *
      * @return  string  a phrase to show that notification is sent
      */
-    
+
     public function send(): string
     {
         return $this->notification->send() . " via email";

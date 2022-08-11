@@ -6,7 +6,6 @@ use Patterns\Creational\Builder\Models\Person;
 
 class PersonBuilder implements Buildable
 {
-
     /**
      * @var Person $person
      */

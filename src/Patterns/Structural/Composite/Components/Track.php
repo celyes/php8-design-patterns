@@ -6,7 +6,6 @@ use Patterns\Structural\Composite\PlayerInterface;
 
 class Track implements PlayerInterface
 {
-
     public function __construct(protected string $artist, protected string $title, protected string $path)
     {
     }

@@ -5,7 +5,7 @@ namespace Patterns\Behavioral\Observer\Interfaces;
 use Patterns\Behavioral\Observer\Interfaces\Observer;
 
 interface Observable
-{   
+{
     /**
      * @return array<Observer>
      */
