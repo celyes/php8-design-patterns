@@ -1,4 +1,4 @@
 /vendor/
-
+/.idea/
 # files
 .phpunit.result.cache
