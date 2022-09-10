@@ -17,6 +17,7 @@ final class ProxyTest extends TestCase
 
         $filereader->method('open')
         ->willReturn("some content...");
+
         // Proxy class for caching file content...
         $cachedReader = new FileCacheReader($filereader);
         $cachedFile = $cachedReader->open('http://www.example.com/');

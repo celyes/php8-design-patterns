@@ -28,7 +28,7 @@
     "check": "vendor/bin/phpcs",
     "test": "./vendor/bin/phpunit --colors=always", 
     "test:verbose": "@test -vvv",
-    "analyse:src": "vendor/bin/phpstan analyse src/ -l 9",
+    "analyse:src": "vendor/bin/phpstan analyse -c phpstan.neon",
     "analyse:debug": "vendor/bin/phpstan analyse --debug src"
   }
 }

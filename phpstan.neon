@@ -1,6 +1,10 @@
 parameters:
-    ignoreErrors:
-        -
-          message: '#Property [a-zA-Z0-9\\_]+::\$data is never read, only written.#'
-          path: src/Patterns/Creational/Builder/Models/*
-    checkGenericClassInNonGenericObjectType: false
+	level: 9
+	paths:
+		- src
+		- tests
+	ignoreErrors:
+		- 
+		 message: '#Property [a-zA-Z0-9\\_]+::\$data is never read, only written.#'
+		 path: src/Patterns/Creational/Builder/Models/*
+	checkGenericClassInNonGenericObjectType: false
