@@ -11,6 +11,7 @@ final class ProxyTest extends TestCase
 
     public function testIfFileCacheReaderIsProxyingFileReader(): void
     {
+        /** @var FileReader&\PHPUnit\Framework\MockObject\MockObject $filereader */
         $filereader = $this->getMockBuilder(FileReader::class)
         ->disableOriginalConstructor()
         ->getMock();
