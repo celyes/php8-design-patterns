@@ -14,7 +14,7 @@ class JsonExport implements Visitor
      */
     public function visitCircle(Circle $circle): string
     {
-        // do whatever login to export the visited object...
+        // do whatever to export the visited object...
         return json_encode(['surface' => $circle->calculateSurface()]) ?: '';
     }
 
@@ -24,7 +24,7 @@ class JsonExport implements Visitor
      */
     public function visitSquare(Square $square): string
     {
-        // do whatever login to export the visited object...
+        // do whatever to export the visited object...
         return json_encode(['surface' => $square->calculateSurface()]) ?: '';
     }
 }
